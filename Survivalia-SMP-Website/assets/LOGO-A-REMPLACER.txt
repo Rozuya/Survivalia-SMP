@@ -1,0 +1,3 @@
+PLACEHOLDER LOGO
+Remplacez ce fichier texte par votre logo officiel, par exemple : assets/logo-survivalia.png
+Puis modifiez la balise <img class="brand-logo"> dans les fichiers HTML.

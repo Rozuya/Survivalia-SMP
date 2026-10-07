@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Comment rejoindre Survivalia SMP.">
+  <title>Survivalia SMP — Nous rejoindre</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-1"></div>
+  <div class="ambient ambient-2"></div>
+
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="index.html">
+        <!-- LOGO OFFICIEL : remplacez par votre fichier logo séparé. -->
+        <img class="brand-logo" src="assets/survivalia-smp.jpg" alt="Logo Survivalia SMP">
+        <span>Survivalia <b>SMP</b></span>
+      </a>
+      <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="server.html">Le serveur</a>
+        <a class="active" href="join.html">Nous rejoindre</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero container">
+      <div>
+        <div class="eyebrow"><span class="status-dot"></span> PRÊT À JOUER ?</div>
+        <h1>Rejoindre Survivalia.</h1>
+        <p>Trois étapes simples pour lancer le serveur et commencer votre aventure.</p>
+      </div>
+    </section>
+
+    <section class="steps container">
+      <article class="step-card">
+        <div class="step-side">
+          <span class="step-number">01</span>
+          <span class="step-line"></span>
+        </div>
+        <div class="step-content">
+          <span class="step-label">ÉTAPE 1</span>
+          <h2>Rejoignez le serveur Discord.</h2>
+          <p>
+            Le Discord est le point de rendez-vous de Survivalia. Vous pourrez y retrouver
+            la communauté et demander le démarrage du serveur.
+          </p>
+          <!-- DISCORD : remplacez le # du bouton par votre invitation Discord. -->
+          <a class="btn btn-secondary" href="#">Rejoindre le Discord <span>↗</span></a>
+        </div>
+        <div class="step-icon">💬</div>
+      </article>
+
+      <article class="step-card">
+        <div class="step-side">
+          <span class="step-number">02</span>
+          <span class="step-line"></span>
+        </div>
+        <div class="step-content">
+          <span class="step-label">ÉTAPE 2</span>
+          <h2>Demandez le lancement du serveur.</h2>
+          <p>
+            Le serveur est <strong>fermé par défaut</strong> afin d'économiser les ressources.
+            Envoyez-moi un MP sur Discord ou mentionnez-moi pour que je lance le serveur
+            via le <strong>bot Falix</strong>.
+          </p>
+          <div class="tip-box"><span>💡</span> Attendez que le serveur soit démarré avant de tenter la connexion.</div>
+        </div>
+        <div class="step-icon">⚡</div>
+      </article>
+
+      <article class="step-card final-step">
+        <div class="step-side">
+          <span class="step-number">03</span>
+        </div>
+        <div class="step-content">
+          <span class="step-label">ÉTAPE 3</span>
+          <h2>Connectez-vous dans Minecraft.</h2>
+          <p>Utilisez Minecraft en version <strong>26.3</strong>, puis ajoutez l'adresse suivante :</p>
+
+          <div class="connection-box">
+            <div>
+              <small>ADRESSE DU SERVEUR</small>
+              <code id="server-ip">survivaliasmp.falixsrv.me</code>
+            </div>
+            <button class="copy-btn" id="copy-ip" type="button">
+              <span>⧉</span><span id="copy-label">Copier</span>
+            </button>
+          </div>
+
+          <div class="platform-line">
+            <span>✓</span> PC disponible maintenant
+            <span class="separator">•</span>
+            <span>◌</span> Bedrock / console : tests en cours
+          </div>
+        </div>
+        <div class="step-icon">🎮</div>
+      </article>
+    </section>
+
+    <section class="join-reminder container">
+      <div class="reminder-card">
+        <span class="section-kicker">RÉCAPITULATIF</span>
+        <h2>Discord → Lancement Falix → Minecraft 26.3</h2>
+        <p>Adresse : <code>survivaliasmp.falixsrv.me</code></p>
+        <button class="btn btn-primary" id="copy-ip-bottom" type="button">Copier l'adresse <span>⧉</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div><strong>Survivalia SMP</strong><p>Survie Vanilla+ • PC • Version 26.3</p></div>
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="server.html">Le serveur</a>
+        <a href="#">Discord</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">Adresse copiée !</div>
+  <script src="script.js"></script>
+</body>
+</html>
